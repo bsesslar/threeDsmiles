@@ -1,0 +1,38 @@
+.floatD{
+    background-image: url(/../../../../assets/whiteD30.svg);
+    background-size: 30rem;
+    max-height: 15.5rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+}
+.tbBorder{
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+.stripe{
+    border-bottom: 1px #00aeef solid;
+    margin-bottom: 1rem;    
+}
+.icoler{
+    color:  #00aeef;
+}
+.mcbutton{
+    background-color: #ffffff;
+    border: 2px solid #33b5e5 !important;
+    color: black !important;
+    margin-top: 3rem; 
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+.dashR{
+    border-right-style: dashed!important;
+    border-color:  #33b5e5 !important;
+}
+.dashL{
+    border-left-style: dashed!important;
+    border-color: #33b5e5 !important;
+}
+.bColor{
+    background-color:  #00aeef;
+}

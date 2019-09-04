@@ -1,0 +1,46 @@
+.floatD{
+    max-height: 450px;
+    opacity: .15;
+}
+.listItem{
+    list-style-image: url("../../../assets/blueD.svg");
+   
+}
+
+.bgFont{
+    font-size: 18pt;
+    @media (min-width: 600px) {
+        
+        font-size: 40pt;
+    }
+}
+.bgmFont{
+    font-size: 20pt!important;   
+}
+.BText{
+    color:  #00aeef;
+}
+.bColor{
+    background-color:  #00aeef;
+}
+.Cborder {
+    border-bottom: 3px solid #00aeef !important;
+}
+.custom {
+    
+    width: 100px;
+    height: 40px;
+    font-size: 5pt;
+    padding: 0px;
+}
+/* For devices 400px and larger: */
+@media only screen and (min-device-width: 414px){
+    .custom{
+    font-size: 12px;
+    font-weight: 700;
+    width: 200px;
+    height: 65px;
+    margin-left: 4em;    
+    }
+    
+}

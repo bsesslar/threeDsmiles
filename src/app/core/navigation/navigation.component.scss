@@ -1,0 +1,91 @@
+.view1 {
+    background: url("../../../assets/landingIntro.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 110px;
+}
+.view1 .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+    background-attachment: fixed;
+}
+.view2 {
+    background: url("../../../assets/orthoIntro.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+.view2 .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+    background-attachment: fixed;
+}
+.view3 {
+    background: url("../../../assets/restorativeIntro.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+.view3 .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.view4 {
+    background: url("../../../assets/surgicalIntro.jpg")no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.view4 .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.infoText{
+    
+    color: #00aeef!important;
+}
+
+@media (min-width: 600px){
+.navbar.scrolling-navbar.top-nav-collapse {
+    background-color: #4285F4 !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+
+
+    
+    

@@ -1,0 +1,64 @@
+.sectionBackground{
+    background-image: url(../../../assets/restorativeBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.dfloat{
+    max-height: 15.5rem;
+    margin-top: -125px;
+    overflow: visible!important;
+}
+.tBorder{
+    border-top: 3px solid;
+ 
+}
+
+/* For devices smaller than 400px: */
+.bsize{
+    width: 5rem;
+    height: 5rem;
+    font-size: 0.25rem;
+    padding: 0px!important;
+    word-break: normal!important;
+    background-color: #d2d0d1;
+    text-transform: none!important;
+}
+.bsize:hover {
+  background-color: #00aeef;
+}
+
+/* For devices 400px and larger: */
+@media only screen and (min-device-width: 414px){
+    .bsize{
+        width: 15rem;
+        height: 15rem;
+        font-size: 1.75rem;
+        background-color: #d2d0d1;
+        
+    }
+    .bsize:hover {
+        background-color: #00aeef;
+      }
+}
+
+.bannerBackgroun{
+    background-image: url(../../../assets/enrollBanner.jpg);
+    background-color: #00aeef;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    
+}
+
+.crownBackground{
+    
+    background-image: url(../../../assets/crownBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 140vh; 
+    background-position: center;
+    padding: 20px;
+}
+
