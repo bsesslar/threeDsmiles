@@ -3,34 +3,30 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, RouterLink, RouterLinkActive, Routes } from '@angular/router';
 import { from } from 'rxjs';
 
-import { LandingPageComponent } from './core/landing-page/landing-page.component'
+import { LandingPageComponent } from './core/landing-page/landing-page.component';
 import { OrthoComponent } from './pages/ortho/ortho.component';
 import { GeneralRestorativeComponent } from './pages/general-restorative/general-restorative.component';
 import { SurgicalImplantComponent } from './pages/surgical-implant/surgical-implant.component';
 
 const routes: Routes = [
-  { path: 'Home', 
+  { path: 'Home',
     component: LandingPageComponent,
     pathMatch: 'full'
-  
   },
-  { path: 'Ortho', 
-    component: OrthoComponent, 
+  { path: 'Ortho',
+    component: OrthoComponent,
     pathMatch: 'full'
-  
   },
-  { path: 'GeneralRestorative', 
-    component: GeneralRestorativeComponent, 
+  { path: 'GeneralRestorative',
+    component: GeneralRestorativeComponent,
     pathMatch: 'full'
-  
   },
-  { path: 'SurgicalImplant', 
-    component: SurgicalImplantComponent, 
+  { path: 'SurgicalImplant',
+    component: SurgicalImplantComponent,
     pathMatch: 'full'
-  
   },
   {
-    path:'**',
+    path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
   },
@@ -41,9 +37,8 @@ const routes: Routes = [
   exports: [RouterModule,
             RouterLink,
             RouterLinkActive,
-            
           ]
-  
+
 })
 export class RoutingModule { }
-export const routingComponents =[ LandingPageComponent, OrthoComponent, GeneralRestorativeComponent, SurgicalImplantComponent]
+export const routingComponents = [ LandingPageComponent, OrthoComponent, GeneralRestorativeComponent, SurgicalImplantComponent ];

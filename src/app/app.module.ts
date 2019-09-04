@@ -8,24 +8,30 @@ import { AppComponent } from './app.component';
 
 import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
 import { RoutingModule } from './routing.module';
-import { coreComponents } from './core/core.module';
-import { pagesComponents } from './pages/pages.module';
-import { modalComponets } from './modals/modal.module';
+import { NavigationComponent } from '../app/core/navigation/navigation.component';
+import { LandingPageComponent } from '../app/core/landing-page/landing-page.component';
 import { LongModal } from './modals/long-modal/long-modal.component';
+import { GeneralRestorativeComponent } from './pages/general-restorative/general-restorative.component';
+import { OrthoComponent } from './pages/ortho/ortho.component';
+import { SurgicalImplantComponent } from './pages/surgical-implant/surgical-implant.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    coreComponents,
-    pagesComponents,
-    modalComponets,
+    NavigationComponent,
+    LandingPageComponent,
+    SurgicalImplantComponent,
+    OrthoComponent,
+    GeneralRestorativeComponent,
+    LongModal,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    // tslint:disable-next-line: deprecation
     HttpModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
