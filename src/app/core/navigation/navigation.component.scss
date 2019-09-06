@@ -72,19 +72,23 @@
     
     color: #00aeef!important;
 }
-
+.navbar.scrolling-navbar{
+    background: #00aeef;
+}
 @media (min-width: 600px){
 .navbar.scrolling-navbar.top-nav-collapse {
-    background-color: #4285F4 !important;
+    background: #4285F4 !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #4285F4;
+        background: #4285F4;
     }
 }
-
+nav.navbar.navColor.fixed-top.navbar-expand-lg.navbar-dark.scrolling-navbar.intro-fixed-nav{
+    background: #00aeef;
+}
 
 
     

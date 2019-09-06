@@ -1,23 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MDBModalService, MDBModalRef } from 'ng-uikit-pro-standard';
-
-import { LongModal } from 'src/app/modals/long-modal/long-modal.component';
+import { longModal } from 'src/app/modals/long-modal/long-modal.component';
 
 @Component({
-  selector: 'Ortho',
+  selector: 'app-ortho',
   templateUrl: './ortho.component.html',
   styleUrls: ['./ortho.component.scss']
 })
 export class OrthoComponent implements OnInit {
-  modalRef: MDBModalRef;
 
   constructor(public router: Router, private modalService: MDBModalService) { }
-
+  modalRef: MDBModalRef;
   ngOnInit() {
   }
   openModal() {
-    this.modalRef = this.modalService.show(LongModal);
+    this.modalRef = this.modalService.show(longModal);
   }
 
 }

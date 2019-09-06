@@ -1,60 +1,61 @@
 <div class="modal-content divice" >
-  <div class="modal-header justify-content-center">
-    
-    <img src="../../../assets/threeDSmilesLogo.svg" class="justify-content-center" style="width: 250px;">
- 
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">×</span>
-    </button>
+    <div class="modal-header justify-content-center">
       
-  </div>
-  <div class="modal-body divice">
-
-    <div class="row justify-content-center">
-      
-      <div *ngIf="this.router.url === '/Home'">
-        <h5 class="h5-responsive mx-auto">Preview our Exclusive Partnership</h5>
-      </div>
-      <div *ngIf="this.router.url === '/Ortho'">
-        <h5 class="h5-responsive mx-auto">Preview our Exclusive Ortho Partnership</h5>
-      </div>
-      <div *ngIf="this.router.url === '/GeneralRestorative'">
-        <h5 class="h5-responsive mx-auto">Preview our Exclusive Restorative Partnership</h5>
-      </div>
-      <div *ngIf="this.router.url === '/SurgicalImplant'">
-        <h5 class="h5-responsive mx-auto">Preview our Exclusive Surgical Partnership</h5>
-      </div>
+      <img src="../../../assets/threeDSmilesLogo.svg" class="justify-content-center" style="width: 250px;">
+   
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">×</span>
+      </button>
+        
     </div>
-
-    <form action="https://www.getdrip.com/forms/697235061/submissions" method="post" data-drip-embedded-form="697235061">
-      <h3 data-drip-attribute="headline"></h3>
-      <div data-drip-attribute="description"></div>
-        <div class="md-form mb-4  divice">
-            <label for="drip-email">Email Address</label><br />
-            <input type="email" id="drip-email" name="fields[email]" class="form-control" value="" />
+    <div class="modal-body divice">
+  
+      <div class="row justify-content-center">
+        
+        <div *ngIf="this.router.url === '/Home'">
+          <h5 class="h5-responsive mx-auto">Preview our Exclusive Partnership</h5>
         </div>
-        <div class="md-form mb-4  divice">
-            <label for="drip-Name">Name</label><br />
-            <input type="text" id="drip-Name" name="fields[Name]" class="form-control"  value="" />
+        <div *ngIf="this.router.url === '/Ortho'">
+          <h5 class="h5-responsive mx-auto">Preview our Exclusive Ortho Partnership</h5>
         </div>
-        <div class="md-form mb-4  divice">
-            <label for="drip-phone">phone</label><br />
-            <input type="text" id="drip-phone" name="fields[phone]" class="form-control" value="" />
+        <div *ngIf="this.router.url === '/GeneralRestorative'">
+          <h5 class="h5-responsive mx-auto">Preview our Exclusive Restorative Partnership</h5>
         </div>
-      <div style="display: none;" aria-hidden="true">
-        <label for="website">Website</label><br />
-        <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="" />
+        <div *ngIf="this.router.url === '/SurgicalImplant'">
+          <h5 class="h5-responsive mx-auto">Preview our Exclusive Surgical Partnership</h5>
+        </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <input mdbBtn color="info" class="waves-light"  mdbWavesEffect type="submit" value="Enroll Now!" data-drip-attribute="sign-up-button" />
-      </div>
-    </form>
-    
-
-  </div>
-
-  <div class="modal-footer d-flex justify-content-center">
+  
+      <form action="https://www.getdrip.com/forms/697235061/submissions" method="post" data-drip-embedded-form="697235061">
+        <h3 data-drip-attribute="headline"></h3>
+        <div data-drip-attribute="description"></div>
+          <div class="md-form mb-4  divice">
+              <label for="drip-email">Email Address</label><br />
+              <input type="email" id="drip-email" name="fields[email]" class="form-control" value="" />
+          </div>
+          <div class="md-form mb-4  divice">
+              <label for="drip-Name">Name</label><br />
+              <input type="text" id="drip-Name" name="fields[Name]" class="form-control"  value="" />
+          </div>
+          <div class="md-form mb-4  divice">
+              <label for="drip-phone">phone</label><br />
+              <input type="text" id="drip-phone" name="fields[phone]" class="form-control" value="" />
+          </div>
+        <div style="display: none;" aria-hidden="true">
+          <label for="website">Website</label><br />
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <input mdbBtn color="info" class="waves-light"  mdbWavesEffect type="submit" value="Enroll Now!" data-drip-attribute="sign-up-button" />
+        </div>
+      </form>
       
-  </div>
-
-</div> 
+  
+    </div>
+  
+    <div class="modal-footer d-flex justify-content-center">
+        
+    </div>
+  
+  </div> 
+  

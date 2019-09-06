@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, RouterLink, RouterLinkActive, Routes } from '@angular/router';
 import { from } from 'rxjs';
 
 import { LandingPageComponent } from './core/landing-page/landing-page.component';
 import { OrthoComponent } from './pages/ortho/ortho.component';
 import { GeneralRestorativeComponent } from './pages/general-restorative/general-restorative.component';
-import { SurgicalImplantComponent } from './pages/surgical-implant/surgical-implant.component';
+import { SurgicaImplantComponent } from './pages/surgica-implant/surgica-implant.component';
 
 const routes: Routes = [
   { path: 'Home',
@@ -22,7 +21,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   { path: 'SurgicalImplant',
-    component: SurgicalImplantComponent,
+    component: SurgicaImplantComponent,
     pathMatch: 'full'
   },
   {
@@ -41,4 +40,4 @@ const routes: Routes = [
 
 })
 export class RoutingModule { }
-export const routingComponents = [ LandingPageComponent, OrthoComponent, GeneralRestorativeComponent, SurgicalImplantComponent ];
+export const routingComponents = [ LandingPageComponent, OrthoComponent, GeneralRestorativeComponent, SurgicaImplantComponent ];

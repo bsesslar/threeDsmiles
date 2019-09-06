@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MDBModalRef, MDBModalService } from 'ng-uikit-pro-standard';
-import { LongModal } from 'src/app/modals/long-modal/long-modal.component';
+import { MDBModalService, MDBModalRef } from 'ng-uikit-pro-standard';
+import { longModal } from '../../modals/long-modal/long-modal.component';
 
 @Component({
   selector: 'landingPage',
@@ -9,14 +9,12 @@ import { LongModal } from 'src/app/modals/long-modal/long-modal.component';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-  modalRef: MDBModalRef;
 
   constructor(public router: Router, private modalService: MDBModalService) { }
-
+  modalRef: MDBModalRef;
   ngOnInit() {
   }
   openModal() {
-    this.modalRef = this.modalService.show(LongModal);
+    this.modalRef = this.modalService.show(longModal);
   }
-
 }
