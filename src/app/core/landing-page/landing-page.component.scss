@@ -6,16 +6,28 @@
     list-style-image: url("../../../assets/blueD.svg");
    
 }
-
+.tImg{
+    max-width: 60vw!important;
+    @media (min-width: 600px) {
+        max-width: 30vw!important; 
+    }
+}
 .bgFont{
     font-size: 18pt;
+    font-weight: 400!important;
+    line-height: 1.1!important;
     @media (min-width: 600px) {
         
-        font-size: 40pt;
+        font-size: 30pt;
+        font-weight: 400!important;
+        line-height: 1.1!important;
     }
 }
 .bgmFont{
-    font-size: 20pt!important;   
+    font-size: 14pt!important;
+    @media (min-width: 600px) {
+        font-size: 16pt!important;
+    }   
 }
 .BText{
     color:  #00aeef;
@@ -32,19 +44,30 @@
     height: 40px;
     font-size: 5pt;
     padding: 0px;
+    color: #9e9e9e!important;
 }
 /* For devices 400px and larger: */
-@media only screen and (min-device-width: 414px){
+@media only screen and (min-device-width: 600px){
     .custom{
-    font-size: 12px;
-    font-weight: 700;
-    width: 200px;
-    height: 65px;
-    margin-left: 4em;    
+        font-size: 12px;
+        font-weight: 700;
+        width: 200px;
+        height: 65px;
+        margin-left: 4em;   
     }
     
 }
 .marg{
     margin-left: 15px !important;
     margin-right: 15px !important;
+}
+
+.centerMask {
+    position: static!important;
+    top: 40% !important;
+    @media (min-width: 600px) {
+    position: absolute!important;
+    top: 40% !important;
+        
+    }
 }

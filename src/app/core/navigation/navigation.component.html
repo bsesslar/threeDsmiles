@@ -3,13 +3,13 @@
     <!-- Main -->
     <mdb-navbar SideClass="navbar info fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="true">
       <mdb-navbar-brand>
-        <a class="navbar-brand" href="/Home">
+        <a class="navbar-brand" href="/">
           <img src="assets/threeDSmilesLogoW.svg" style="width: 250px">
         </a> 
       </mdb-navbar-brand>
       <links>
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item waves-light"[routerLink]="[ '/Home' ]" routerLinkActive="active" mdbWavesEffect>
+          <li class="nav-item waves-light"[routerLink]="[ '/' ]" routerLinkActive="active" mdbWavesEffect>
             <a class="nav-link ">Home</a>
           </li>
           <li class="nav-item waves-light" [routerLink]="[ '/Ortho' ]" routerLinkActive="active" mdbWavesEffect>
@@ -29,24 +29,24 @@
   
     <!--Main Navigation-->
   
-  <div *ngIf="this.router.url === '/Home'">
+  <div *ngIf="this.router.url === '/'">
     <div class="view1">
       <div class="full-bg-img">
-        <a class="d-flex align-items-stretch justify-content-center my-5">
-          <img src="assets/threeDSmilesLogoW.svg" style="width: 700px">
-        </a>
-  
         <div class="mask d-flex flex-column-reverse">
           <div class="d-flex flex-column align-self-center">
-            <div class="p-2" style="margin: 10rem;" >
+            <div class="p-2">
+                
+              <img src="assets/threeDSmilesLogoW.svg" style="width: 700px">
+                 
             </div>
             <div class="p-2 white-text font-weight-bold wow fadeInUp mt-5 align-self-center">
-              <h1>Demo Text</h1>
+              <h1>Modern, Cost Effective, Dental Appliences</h1>
             </div>
             <div class="p-2 mb-3 align-self-center">
               <button type="button" mdbBtn color="info" size="lg" rounded="true" data-toggle="modal" data-target="#subscribeData"
                 (click)="openModal()" mdbWavesEffect>Enroll Today!</button>
             </div>
+            
   
           </div>
         </div>

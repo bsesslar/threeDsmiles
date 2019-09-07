@@ -8,7 +8,7 @@ import { GeneralRestorativeComponent } from './pages/general-restorative/general
 import { SurgicaImplantComponent } from './pages/surgica-implant/surgica-implant.component';
 
 const routes: Routes = [
-  { path: 'Home',
+  { path: '',
     component: LandingPageComponent,
     pathMatch: 'full'
   },
