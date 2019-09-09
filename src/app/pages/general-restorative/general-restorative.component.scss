@@ -32,15 +32,22 @@
 /* For devices 400px and larger: */
 @media only screen and (min-device-width: 414px){
     .bsize{
+        width: 5rem;
+        height: 5rem;
+        font-size: 1rem;
+        background-color: #d2d0d1;
+        @media (min-width: 600px) {
         width: 15rem;
         height: 15rem;
         font-size: 1.75rem;
-        background-color: #d2d0d1;
-        
+        }        
     }
     .bsize:hover {
         background-color: #00aeef;
-      }
+        @media (min-width: 600px) {
+            background-color: #00aeef;
+        }
+    }
 }
 
 .bannerBackgroun{
