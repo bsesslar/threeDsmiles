@@ -71,3 +71,16 @@
         
     }
 }
+.ps{
+    padding: .25rem;
+    @media (min-width: 600px){
+        padding: 3.5rem;
+    }
+}
+.bmarg{
+    padding: .25rem;
+    @media (min-width: 600px){
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+}
